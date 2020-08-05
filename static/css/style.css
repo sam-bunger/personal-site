@@ -1,0 +1,166 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Lato;
+  height: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+
+.sidebar {
+  height: 100%;
+  width: 300px;
+  min-width: 300px;
+  background-color: #5a6572;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+}
+
+/* Inner Content */
+
+.page_content{
+  padding: 60px 120px;
+  width: 100%;
+  z-index: 0;
+}
+
+.page_content_title{
+  margin: 0;
+  font-size: 41px;
+}
+
+.page_content_inner {
+  height: 100%;
+}
+
+.flex_row {
+  display: flex;
+  flex-direction: row;
+  height: 80%;
+  padding: 5% 0 0 0;
+}
+
+/* Profile Component */
+
+.profile {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  margin: 10px 20px 10px 20px;
+  background-color: #24292e;
+  border-radius: 5px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+
+.profile_image{
+  border-radius: 100%;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile_items{
+  margin: 10px 10px 0 10px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.profile_title{
+  font-size: 36px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+  color: white;
+  text-align: center;
+}
+
+.profile_icon{
+  fill:white;
+  display: inline-block;
+  transition-duration: 0.4s;
+}
+
+.profile_icon:hover{
+  fill: #A7F5AE;
+}
+
+/* Button Component */
+
+.button {
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  display: inline-block;
+  padding: 3px 5px;
+  font-weight: bold;
+  background-color: white;
+  color: #24292e;
+  text-decoration: none;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button:hover{
+  background-color: #A7F5AE;
+}
+
+.no-style{
+  margin: 0;
+  padding: 0;
+}
+
+/* Menu Component */
+
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.menu_item {
+  height: 70px;
+  width: 100%;
+  background-color: #5a6572;
+  color: white;
+  font-size: 20px;
+  margin: 0;
+  border: 0;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+
+.menu_item:hover {
+  background-color: #A7F5AE;
+}
+
+.menu_item:focus {
+  border: 0; 
+  background-color: white; 
+  color: #24292e;
+  outline: 0;
+}
+
+/* Large Card Component */
+
+.large_card {
+  display: block;
+  padding: 20px;
+  margin: 10px;
+  background-color: #24292e;
+  border-radius: 7px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+  height: auto;
+  width: 500px;
+  min-width: 500px;
+  color: white;
+}
